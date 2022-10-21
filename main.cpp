@@ -2,7 +2,17 @@
 using namespace std;
 
 class MyNumberRepo{
+
+    ///just tryout to build classes with methods and properties
 public:
+    int number1 = 15;//decimal
+    int number2 = 017;//Octal
+    int number3 = 0x0f;//hexadecimal
+    int number4 = 0b00001111; //binary
+
+//constructor syntax
+    explicit MyNumberRepo(int number1,int number2, int number3, int number4) : number1(number1), number2(number2),number3(number3),number4(number4) {}
+
     static consteval int get_value(int value){
         return value;
     }
